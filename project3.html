@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="images/1.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+</head>
+
+<body>
+    <!--header anne barria-->
+    
+    <div class="main-container">
+    <div class="menu-profile">
+    <header>
+      <nav>
+        <button class="dark-light-btn bg-gardient">
+          <i class="fa-regular fa-sun"></i>
+        </button>
+        <ul>
+          <li><a href="index.html" data-label="About" class="active">
+             <i class="fa-solid fa-address-book"></i>
+          </a></li>
+           <li><a href="index.html" data-label="Skills">
+             <i class="fa-solid fa-layer-group"></i>
+          </a></li>
+          <li><a href="index.html" data-label="Cercertificate">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          </a></li>
+
+         <li><a href="index.html" data-label="Projects">
+          <i class="fa-solid fa-briefcase"></i>
+          </a></li>
+         <li><a href="index.html" data-label="Resume">
+             <i class="fa-solid fa-file-lines"></i>
+          </a></li>
+         <li><a href="index.html" data-label="Contact">
+             <i class="fa-solid fa-paper-plane"></i>
+          </a></li>
+        </ul>
+      </nav>
+    </header> 
+    <!--Protfile anne barria-->
+  <div class="profile-container">
+    <div class="user-profile bg-gardient">
+      <div class="user-profile-container">
+        <div class="user-profile-img">
+          <img src="images/logo.jpg" alt="Anne Nicole"/>
+        </div>
+        <div class="user-profile-text">
+          <span>Web Developer</span>
+          <h1>Anne Nicole</h1>
+          <div class="profile-social-container">
+            <a href="https://www.facebook.com/share/1S7DCziP4n/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/share/1S7DCziP4n/"><i class="fa-brands fa-reddit-alien"></i></a>
+            <a href="https://x.com/Ishirawrrrrr?t=GFdj7E-VZ-YxLFQvuPa-PA&s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+        <div class="user-profile-btns">
+          <a href="cv/res.pdf" download target="_blank">Download CV</a>
+          <a href="#">Contact Me</a>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+<div class="all-content">
+
+<section id="certificate" class="section-container">
+  <div class="section-heading" data-aos="fade-up">
+    <span><i class="fa-solid fa-certificate"></i> Project 3</span>
+    <h3>Invoice Website</h3>
+
+<p><br>This project is a web-based invoice management system that I personally designed to improve both functionality and user experience. The system allows users to create and manage invoices with a clean and professional interface. It includes key features such as print and download options, making it convenient for businesses and users to generate physical or digital copies of their invoices.</br></p>
+
+<p><br> The website is also built to be responsive, ensuring a seamless experience across different devices. Through this project, I was able to enhance my skills not only in web development but also in UI/UX design, focusing on layout, typography, and overall usability. Completing this project strengthened my ability to combine technical functionality with effective design, while continuing to self-learn through AI tools and online resources.</b></p>
+
+<br>
+  </div>
+  <div class="slider-wrapper" data-aos="fade-up">
+    <div class="certificate-gallery">
+      <img src="p3/p3-1.png" alt="certificate">
+      <img src="p3/p3-2.png" alt="certificate">
+      <img src="p3/p3-3.png" alt="certificate">
+      <img src="p3/p3-4.png" alt="certificate">
+      <img src="p3/p3-5.png" alt="certificate">
+     <img src="p3/p3-6.png" alt="certificate">
+
+    </div>
+    <!-- invisible tap zones -->
+    <div class="tap-zone left"></div>
+    <div class="tap-zone right"></div>
+  </div>
+            <a href="project2.html" class="project-box" data-category="P2">
+        <div class="project-box-text-container">
+          <div class="project-box-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+          </div>
+   </a>
+           <a href="project4.html" class="project-box" data-category="P2">
+          <div class="project-box-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+</section>
+    <!--web dark light mode script-->
+    
+    <script>
+document.addEventListener("DOMContentLoaded", function(){
+    const toggleButton = document.querySelector(".dark-light-btn");
+    const htmlElement = document.documentElement;
+
+    const currentMode = localStorage.getItem("mode");
+
+    if (currentMode === "light") {
+        htmlElement.classList.add("light-mode");
+        toggleButton.innerHTML = "<i class='fa-regular fa-moon'></i>";
+    }
+
+    toggleButton.addEventListener("click", ()=>{
+        htmlElement.classList.toggle("light-mode");
+
+        //update the button icon
+        const isLightMode = htmlElement.classList.contains("light-mode");
+        toggleButton.innerHTML = isLightMode ? "<i class='fa-regular fa-moon'></i>" : "<i class='fa-regular fa-sun'></i>";
+        
+        localStorage.setItem("mode", isLightMode ? "light" : "dark");
+    });
+    
+    const section = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("ul li a");
+
+    function setActiveLink(){
+        let currentSection = "";
+
+        section.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute('href') === '#${currentSection}') {
+              link.classList.add("active");
+            }
+        });
+    }
+    window.addEventListener("scroll",setActiveLink);
+});
+
+    </script>
+<!--certiricate sxript anne barria-->
+<script>
+const gallery = document.querySelector(".certificate-gallery");
+const images = gallery.querySelectorAll("img");
+const leftZone = document.querySelector(".tap-zone.left");
+const rightZone = document.querySelector(".tap-zone.right");
+
+let currentIndex = 0;
+let autoSlideInterval;
+
+function goToSlide(index) {
+  currentIndex = (index + images.length) % images.length;
+  gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function nextSlide() { goToSlide(currentIndex + 1); }
+function prevSlide() { goToSlide(currentIndex - 1); }
+
+function startAutoSlide() {
+  stopAutoSlide();
+  autoSlideInterval = setInterval(nextSlide, 2000);
+}
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// tap zones
+rightZone.addEventListener("click", () => {
+  stopAutoSlide();
+  nextSlide();
+  startAutoSlide();
+});
+leftZone.addEventListener("click", () => {
+  stopAutoSlide();
+  prevSlide();
+  startAutoSlide();
+});
+
+// init
+goToSlide(0);
+startAutoSlide();
+</script>
+
+</section>
+</div>
+</div>
+<!--animation--> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  
+document.addEventListener("DOMContentLoaded", () => {
+  const roles = ["Web Developer", "Software Engineer", "Full Stack Developer"];
+  const roleElement = document.getElementById('role');
+  let roleIndex = 0;
+  let letterIndex = 0;
+  let typingInterval;
+
+  function typeRole() {
+    roleElement.style.opacity = 0;
+    setTimeout(() => {
+      roleElement.textContent = "";
+      letterIndex = 0;
+
+      typingInterval = setInterval(() => {
+        if (letterIndex < roles[roleIndex].length) {
+          roleElement.textContent += roles[roleIndex].charAt(letterIndex);
+          letterIndex++;
+        } else {
+          clearInterval(typingInterval);
+          setTimeout(() => {
+            roleIndex = (roleIndex + 1) % roles.length;
+            typeRole();
+          }, 1000);
+        }
+      }, 150);
+
+      roleElement.style.opacity = 1;
+    }, 500);
+  }
+
+  typeRole();
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll('.project-list li');
+  const projects = document.querySelectorAll(".project-box");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+
+      projects.forEach((project) => {
+        if (filter === "all" || project.getAttribute("data-category") === filter) {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
